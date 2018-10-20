@@ -12,8 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        val formattedDate = if (LocaleUtils.getLocale() == "en_US") DateUtils.getUSFormattedDate(Calendar.getInstance().time) else DateUtils.getEUFormattedDate(Calendar.getInstance().time
-        )
+        val formattedDate = if (LocaleUtils.getLocale() == "en_US") DateUtils.getUSFormattedDate(Calendar.getInstance().time) else DateUtils.getEUFormattedDate(Calendar.getInstance().time)
         binding.mainDate.text = String.format("Date : $formattedDate")
     }
 }
