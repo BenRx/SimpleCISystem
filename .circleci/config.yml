@@ -64,7 +64,7 @@ jobs:
           at: ~/code
       - run:
           name: Setup env
-          command: cd ../ ; chmod 777 ./deploy_dev.sh
+          command: ls -l
       - run:
           name: Push APK on HockeyApp
           command: ./deploy_dev.sh
