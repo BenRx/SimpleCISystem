@@ -52,6 +52,9 @@ jobs:
       - persist_to_workspace:
           root: ~/code
           paths: app/build/outputs/apk/release/
+      - persist_to_workspace:
+          root: ~/code
+          paths: deploy_dev.sh
   
   push_to_hockeyapp:
     working_directory: ~/code
