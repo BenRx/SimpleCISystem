@@ -78,6 +78,8 @@ workflows:
           requires:
             - test_debug
       - push_to_hockeyapp:
+          requires:
+            - build_unsigned_release
           filters:
             branches:
               only: staging
